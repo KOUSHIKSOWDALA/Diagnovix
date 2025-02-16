@@ -5,7 +5,7 @@ const db = new pg.Client({
     host:'localhost',
     database:'patientsrecord',
     password: process.env.SQL,
-    port: 5432
+    port: process.env.PORT1
 })
 
 db.connect()
